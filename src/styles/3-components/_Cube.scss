@@ -2,32 +2,38 @@
 {
   $size: var( --cube-size );
   $half: calc( #{ $size } / 2 );
-  $-half: calc( #{ $half } * -1 );
+  $-half: calc( -1 * #{ $half } );
 
   $color: var( --cube-color );
 
-  @include size( $size );
-
-  &,
-  &::before,
-  &::after
-  {
-    background-color: $color;
-  }
+  @extend %flex-center, %scene-element;
 
   > *
   {
+    @extend %pseudo-elements;
+
+    &,
+    &::before,
+    &::after
+    {
+      @extend %scene-element;
+
+      @include size( $size );
+
+      background-color: $color;
+    }
+
     &:first-child
     {
       & { transform: rotate3d( 0, 1, 0, 0deg ) translate3d( 0, 0, $half ) }
       &::before { transform: rotate3d( 0, 1, 0, 90deg ) translate3d( $half, 0, $half ) }
-      &::after { transform: rotate3d( 0, 1, 0, -90deg ) translate3d( -$half, 0, $half ) }
+      &::after { transform: rotate3d( 0, 1, 0, -90deg ) translate3d( $-half, 0, $half ) }
     }
 
     &:last-child
     {
       & { transform: rotate3d( 0, 1, 0, 180deg ) translate3d( 0, 0, $half ) }
-      &::before { transform: rotate3d( 1, 0, 0, 90deg ) translate3d( 0, -$half, $half ) }
+      &::before { transform: rotate3d( 1, 0, 0, 90deg ) translate3d( 0, $-half, $half ) }
       &::after { transform: rotate3d( 1, 0, 0, -90deg ) translate3d( 0, $half, $half ) }
     }
   }
