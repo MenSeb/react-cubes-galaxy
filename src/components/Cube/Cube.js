@@ -11,8 +11,8 @@ export default function Cube ({ color, size, ...props })
 
   return (
     <div { ...props } className='Cube' style={ cubeStyle }>
-      <div className='Faces' />
-      <div className='Faces' />
+      <div className='Faces' aria-hidden={ true } />
+      <div className='Faces' aria-hidden={ true } />
     </div>
   )
 }
