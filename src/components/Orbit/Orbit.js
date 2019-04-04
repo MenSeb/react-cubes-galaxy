@@ -2,11 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useVariablesCSS } from '../../hooks';
 
-export default function Orbit ({ color, distance, size, ...props })
+export default function Orbit ({ colors, distance, size, ...props })
 {
+  const [ colorBefore, color, colorAfter ] = colors
+
   const orbitStyle = useVariablesCSS({
     vars: {
       color: `#${ color }`,
+      color_before: `#${ colorBefore }`,
+      color_after: `#${ colorAfter }`,
       distance: `${ distance }px`,
       size: `${ size }px`
     },
@@ -19,7 +23,7 @@ export default function Orbit ({ color, distance, size, ...props })
 }
 
 Orbit.propTypes = {
-  color: PropTypes.string.isRequired,
+  colors: PropTypes.arrayOf( PropTypes.string ).isRequired,
   distance: PropTypes.number.isRequired,
   size: PropTypes.number.isRequired,
 }
