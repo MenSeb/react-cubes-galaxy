@@ -1,0 +1,50 @@
+.Orbit
+{
+  $size: var( --orbit-size );
+  $half: calc( #{ $size } / 2 );
+  $twice: calc( #{ $size } * 2 );
+  $distance: var( --orbit-distance );
+
+  $orbitSize: calc( #{ $distance } * 2 + #{ $half } );
+  $orbitSizeBefore: calc( #{ $orbitSize } - #{ $twice } );
+  $orbitSizeAfter: calc( #{ $orbitSize } + #{ $twice } );
+
+  $orbitColor: var( --orbit-color );
+  $orbitColorBefore: var( --orbit-color_before );
+  $orbitColorAfter: var( --orbit-color_after );
+
+  @extend %pseudo-elements;
+
+  transform: rotate3d( 1, 0, 0, 90deg );
+
+  &,
+  &::before,
+  &::after
+  {
+    @extend %scene-element, %flex-center;
+
+    border: $size solid;
+    border-radius: 50%;
+  }
+
+  &
+  {
+    @include size( $orbitSize );
+
+    border-color: $orbitColor;
+  }
+
+  &::before
+  {
+    @include size( $orbitSizeBefore );
+
+    border-color: $orbitColorBefore;
+  }
+
+  &::after
+  {
+    @include size( $orbitSizeAfter );
+
+    border-color: $orbitColorAfter;
+  }
+}
