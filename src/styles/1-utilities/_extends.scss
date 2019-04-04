@@ -7,3 +7,18 @@
 {
   @include size( 100% );
 }
+
+%scene-element
+{
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+%pseudo-elements
+{
+  &::before,
+  &::after
+  {
+    content: '';
+  }
+}
