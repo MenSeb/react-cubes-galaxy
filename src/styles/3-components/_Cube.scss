@@ -16,7 +16,7 @@
     &::before,
     &::after
     {
-      @extend %scene-element;
+      @extend %scene-element, %flex-center;
 
       @include size( $size );
 
