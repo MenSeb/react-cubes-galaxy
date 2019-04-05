@@ -11,17 +11,15 @@ export default function Star ({
   rotation,
   size,
   time,
-  animated,
-  ...props
 })
 {
   const starStyle = useVariablesCSS({
-    vars: { distance: `${ distance }px`, animated },
+    vars: { distance: `${ distance }px` },
     preVar: 'star'
   })
 
   return (
-    <div { ...props } className='Star' style={ starStyle }>
+    <div className='Star' style={ starStyle }>
       <Rotation { ...rotation } d={ time }>
         <Cube color={ color } size={ size } aria-hidden={ true } />
       </Rotation>
