@@ -3,48 +3,20 @@
   $distance: var( --size-distance );
   $size: var( --size-size );
   $half: calc( #{ $size } / 2 );
-  $twice: calc( #{ $size } * 2 );
 
-  $orbitSize: calc( #{ $distance } * 2 + #{ $half } );
-  $orbitSizeBefore: calc( #{ $orbitSize } - #{ $twice } );
-  $orbitSizeAfter: calc( #{ $orbitSize } + #{ $twice } );
+  // TODO : ratio as Orbit prop ?
+  $ratioOrbit: .25;
 
-  $orbitColor: var( --color-border );
-  $orbitColorBefore: var( --color-before );
-  $orbitColorAfter: var( --color-after );
+  $orbitColor: var( --color-color );
+  $orbitSize: calc( #{ $size } * #{ $ratioOrbit } );
+  $orbitDiameter: calc( #{ $distance } * 2 + #{ $half } );
 
-  @extend %pseudo-elements;
+  @extend %pseudo-elements, %scene-element, %flex-center;
+
+  @include size( $orbitDiameter );
+
+  border: $orbitSize solid $orbitColor;
+  border-radius: 50%;
 
   transform: rotate3d( 1, 0, 0, 90deg );
-
-  &,
-  &::before,
-  &::after
-  {
-    @extend %scene-element, %flex-center;
-
-    border: $size solid;
-    border-radius: 50%;
-  }
-
-  &
-  {
-    @include size( $orbitSize );
-
-    border-color: $orbitColor;
-  }
-
-  &::before
-  {
-    @include size( $orbitSizeBefore );
-
-    border-color: $orbitColorBefore;
-  }
-
-  &::after
-  {
-    @include size( $orbitSizeAfter );
-
-    border-color: $orbitColorAfter;
-  }
 }
