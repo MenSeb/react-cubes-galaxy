@@ -1,0 +1,10 @@
+.Galaxy
+{
+  $color: var( --galaxy-color );
+  $perspective: calc( #{ var( --galaxy-perspective ) } * 4 );
+
+  @extend %full-size, %flex-center;
+
+  background-color: $color;
+  perspective: $perspective;
+}
