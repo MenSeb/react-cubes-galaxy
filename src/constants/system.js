@@ -1,27 +1,29 @@
 import uid from 'uniqid';
 
+const orbitColors = [ '333333', '888888', 'BBBBBB' ]
+
 export default [
   {
     distance: 0,
     star: {
-      color: '777777',
+      color: 'FFFF00',
       rotation: { x: 1, y: 1, z: 1, t: 360 },
-      size: 50,
-      time: 4,
+      size: 100,
+      time: 10,
     }
   },
   {
-    distance: 200,
+    distance: 150,
     star: {
-      color: '777777',
-      rotation: { x: 1, y: 1, z: 1, t: 360 },
-      size: 50,
-      time: 4,
+      color: 'FF0000',
+      rotation: { y: 1, t: 360 },
+      size: 20,
+      time: 6,
     },
     orbit: {
-      colors: [ 'FF0000', '00FF00', '0000FF' ],
-      size: 5,
-      time: 3
+      colors: orbitColors,
+      size: 2,
+      time: 4
     }
   }
 ].map( element => ({ id: uid(), ...element }) )
