@@ -2,6 +2,7 @@
   "name": "react-cubes-galaxy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://menseb.github.io/react-cubes-galaxy",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -24,6 +25,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
