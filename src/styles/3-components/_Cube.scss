@@ -1,10 +1,19 @@
 .Cube
 {
-  $size: var( --cube-size );
+  $size: var( --size-size );
   $half: calc( #{ $size } / 2 );
   $-half: calc( -1 * #{ $half } );
 
   $color: var( --cube-color );
+
+  $colorBackground: var( --color-background );
+  $colorBorder: var( --color-border );
+  $colorShadow: var( --color-shadow );
+
+  // $sizeBorder: calc( #{ $size } * #{ $ratioBorder } );
+  // $sizeShadow: calc( #{ $size } * #{ $ratioShadow } );
+
+  // $shadow: 0 0 $sizeShadow 0 $colorShadow inset;
 
   @extend %flex-center, %scene-element;
 
@@ -20,7 +29,7 @@
 
       @include size( $size );
 
-      background-color: $color;
+      background-color: $colorBackground;
     }
 
     &:first-child

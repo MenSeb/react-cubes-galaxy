@@ -1,23 +1,23 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { useVariablesCSS } from '../../hooks';
+import propTypes from './types'
+import { useColors, useSizes } from '../../hooks';
 
-export default function Cube ({ color, size, ...props })
+Cube.propTypes = propTypes
+
+export default function Cube ({
+  colors: [ background, border, shadow ],
+  size,
+  ...props
+})
 {
-  const cubeStyle = useVariablesCSS({
-    vars: { color: `#${ color }`, size: `${ size }px` },
-    preVar: 'cube'
-  })
+  const colorsStyle = useColors({ colors: { background, border, shadow } })
+
+  const sizesStyle = useSizes({ sizes: { size } })
 
   return (
-    <div { ...props } className='Cube' style={ cubeStyle }>
+    <div { ...props } className='Cube' style={{ ...colorsStyle, ...sizesStyle }}>
       <div className='Faces' aria-hidden={ true } />
       <div className='Faces' aria-hidden={ true } />
     </div>
   )
-}
-
-Cube.propTypes = {
-  color: PropTypes.string.isRequired,
-  size: PropTypes.number.isRequired,
 }
