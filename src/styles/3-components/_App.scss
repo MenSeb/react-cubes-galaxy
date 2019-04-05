@@ -1,6 +1,6 @@
 .App
 {
-  @extend %full-size, %flex-center, %scene-element;
+  @extend %full-size, %flex-center;
 
   overflow: hidden;
 }
