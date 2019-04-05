@@ -3,6 +3,7 @@ import Orbit from './Orbit'
 import Planet from './Planet'
 import Rotation from './Rotation'
 import Star from './Star'
+import Galaxy from './Galaxy'
 
 export {
   Cube,
@@ -10,4 +11,5 @@ export {
   Planet,
   Rotation,
   Star,
+  Galaxy,
 }
