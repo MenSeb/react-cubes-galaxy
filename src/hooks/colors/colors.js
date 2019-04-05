@@ -1,11 +1,18 @@
 import { useVariablesCSS } from '..';
 
-export default function useColors ({ colors })
+export default function useColors ({
+  colors,
+  preVar = 'color',
+  preVal = '#',
+  sepVal = '',
+  ...options
+})
 {
   return useVariablesCSS({
     vars: colors,
-    preVar: 'color',
-    preVal: '#',
-    sepVal: ''
+    preVar,
+    preVal,
+    sepVal,
+    ...options
   })
 }
