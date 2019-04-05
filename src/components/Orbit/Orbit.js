@@ -1,6 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import propTypes from './types'
 import { useVariablesCSS } from '../../hooks';
+
+Orbit.propTypes = propTypes
 
 export default function Orbit ({ colors, distance, size, ...props })
 {
@@ -20,10 +22,4 @@ export default function Orbit ({ colors, distance, size, ...props })
   return (
     <div { ...props } className='Orbit' style={ orbitStyle } />
   )
-}
-
-Orbit.propTypes = {
-  colors: PropTypes.arrayOf( PropTypes.string ).isRequired,
-  distance: PropTypes.number.isRequired,
-  size: PropTypes.number.isRequired,
 }
