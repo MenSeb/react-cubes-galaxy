@@ -1,4 +1,4 @@
-import { number, oneOf, oneOfType, string } from 'prop-types'
+import { element, number, oneOf, oneOfType, string } from 'prop-types'
 
 const oneOrZero = oneOf([ 0, 1 ])
 
@@ -10,4 +10,5 @@ export default {
   d: number,
   e: string,
   c: oneOfType([ string, number]),
+  children: element,
 }

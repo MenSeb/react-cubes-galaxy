@@ -4,7 +4,7 @@ import { useVariablesCSS } from '../../hooks';
 
 Rotation.propTypes = propTypes
 
-export default function Rotation ({ x, y, z, t, d, e, c, ...props })
+export default function Rotation ({ x, y, z, t, d, e, c, children })
 {
   const rotationStyle = useVariablesCSS({
     vars: { x, y, z, t, d, e, c },
@@ -12,11 +12,8 @@ export default function Rotation ({ x, y, z, t, d, e, c, ...props })
   })
 
   return (
-    <div
-      { ...props }
-      aria-hidden={ true }
-      className='Rotation'
-      style={ rotationStyle }
-    />
+    <div aria-hidden={ true } className='Rotation'  style={ rotationStyle }>
+      { children }
+    </div>
   )
 }
