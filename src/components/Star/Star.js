@@ -1,7 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import propTypes from './types'
 import { Cube, Rotation } from '..';
 import { useVariablesCSS } from '../../hooks';
+
+Star.propTypes = propTypes
 
 export default function Star ({
   color,
@@ -9,11 +11,12 @@ export default function Star ({
   rotation,
   size,
   time,
+  animated,
   ...props
 })
 {
   const starStyle = useVariablesCSS({
-    vars: { distance: `${ distance }px` },
+    vars: { distance: `${ distance }px`, animated },
     preVar: 'star'
   })
 
@@ -24,12 +27,4 @@ export default function Star ({
       </Rotation>
     </div>
   )
-}
-
-Star.propTypes = {
-  color: PropTypes.string.isRequired,
-  distance: PropTypes.number.isRequired,
-  rotation: PropTypes.object.isRequired,
-  size: PropTypes.number.isRequired,
-  time: PropTypes.number.isRequired,
 }
