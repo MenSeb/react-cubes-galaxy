@@ -1,4 +1,6 @@
 .System
 {
   @extend %scene-element, %flex-center;
+
+  @include rotation( $x: 1, $t: -22.5deg );
 }
