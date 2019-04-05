@@ -1,7 +1,7 @@
 .Galaxy
 {
-  $color: var( --galaxy-color );
-  $perspective: calc( #{ var( --galaxy-perspective ) } * 4 );
+  $color: var( --color-color );
+  $perspective: calc( #{ var( --size-perspective ) } * 4 );
 
   @extend %full-size, %flex-center;
 
