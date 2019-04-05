@@ -1,19 +1,23 @@
 .Cube
 {
   $size: var( --size-size );
-  $half: calc( #{ $size } / 2 );
+  // -0.5px to fix borders gap/space on Chrome
+  $half: calc( #{ $size } / 2 - 0.5px );
   $-half: calc( -1 * #{ $half } );
 
-  $color: var( --cube-color );
+  $color: var( --color-color );
 
-  $colorBackground: var( --color-background );
-  $colorBorder: var( --color-border );
-  $colorShadow: var( --color-shadow );
+  // TODO : Set ratios as Cube props
+  $ratioBorder: .1;
+  $ratioShadow: .25;
 
-  // $sizeBorder: calc( #{ $size } * #{ $ratioBorder } );
-  // $sizeShadow: calc( #{ $size } * #{ $ratioShadow } );
+  $sizeBorder: calc( #{ $size } * #{ $ratioBorder } );
+  $sizeShadow: calc( #{ $size } * #{ $ratioShadow } );
 
-  // $shadow: 0 0 $sizeShadow 0 $colorShadow inset;
+  $border: $sizeBorder solid $color;
+
+  // IDEA : inset shadow for planets and outset shadow for stars ?
+  $shadow: 0 0 $sizeShadow 0 $color inset;
 
   @extend %flex-center, %scene-element;
 
@@ -29,7 +33,8 @@
 
       @include size( $size );
 
-      background-color: $colorBackground;
+      border: $border;
+      box-shadow: $shadow;
     }
 
     &:first-child
