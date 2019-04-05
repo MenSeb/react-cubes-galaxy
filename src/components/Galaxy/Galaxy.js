@@ -1,5 +1,8 @@
 import React from 'react'
+import propTypes from './types'
 import { usePerspective, useVariablesCSS } from '../../hooks';
+
+Galaxy.propTypes = propTypes
 
 export default function Galaxy ({ color, elements, ...props })
 {
