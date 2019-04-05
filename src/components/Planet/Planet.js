@@ -4,12 +4,17 @@ import { Star, Orbit, Rotation } from '..'
 
 Planet.propTypes = propTypes
 
-export default function Planet ({ distance, orbit: { time, ...orbit }, planet })
+export default function Planet ({
+  distance,
+  orbit: { time, ...orbit },
+  star,
+  ...props
+})
 {
   return (
-    <div className='Planet'>
+    <div { ...props } className='Planet'>
       <Rotation y={ 1 } t={ 360 } d={ time }>
-        <Star { ...planet } distance={ distance } />
+        <Star star={ star } distance={ distance } />
       </Rotation>
       <Orbit { ...orbit } distance={ distance } />
     </div>
