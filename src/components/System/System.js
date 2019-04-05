@@ -2,20 +2,20 @@ import React from 'react'
 import propTypes from './types'
 import { Planet, Star } from '..'
 
-Galaxy.propTypes = propTypes
+System.propTypes = propTypes
 
-export default function Galaxy ({ elements, ...props })
+export default function System ({ elements, ...props })
 {
   return (
-    <div { ...props } className='Galaxy'>
+    <div { ...props } className='System'>
     {
       elements.map(
         ( { id, ...element }, index ) =>
         {
-          const GalaxyElement = index > 0 ? Planet : Star
+          const SystemElement = index > 0 ? Planet : Star
 
           return (
-            <GalaxyElement { ...element } key={ id } />
+            <SystemElement { ...element } key={ id } />
           )
         }
       )
