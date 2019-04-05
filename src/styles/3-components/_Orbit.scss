@@ -9,7 +9,7 @@
 
   $orbitColor: var( --color-color );
   $orbitSize: calc( #{ $size } * #{ $ratioOrbit } );
-  $orbitDiameter: calc( #{ $distance } * 2 + #{ $half } );
+  $orbitDiameter: calc( 2 * #{ $distance } + #{ $half } );
 
   @extend %pseudo-elements, %scene-element, %flex-center;
 
