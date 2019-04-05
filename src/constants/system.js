@@ -16,7 +16,7 @@ const planets = Array.from(
     const planetSize = Math.random() * 25 + 25
 
     return {
-      distance: ( index + 1 ) * 50 + starSize,
+      distance: ( index + 1 ) * 50 + starSize + planetSize,
       star: {
         color: randomHexColor(),
         size: planetSize,
