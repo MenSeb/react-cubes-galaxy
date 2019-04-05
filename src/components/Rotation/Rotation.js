@@ -12,6 +12,11 @@ export default function Rotation ({ x, y, z, t, d, e, c, ...props })
   })
 
   return (
-    <div { ...props } className='Rotation' style={ rotationStyle } />
+    <div
+      { ...props }
+      aria-hidden={ true }
+      className='Rotation'
+      style={ rotationStyle }
+    />
   )
 }

@@ -23,7 +23,7 @@ export default function Star ({
   return (
     <div { ...props } className='Star' style={ starStyle }>
       <Rotation { ...rotation } d={ time }>
-        <Cube color={ color } size={ size } />
+        <Cube color={ color } size={ size } aria-hidden={ true } />
       </Rotation>
     </div>
   )
