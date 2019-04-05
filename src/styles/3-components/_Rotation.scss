@@ -1,0 +1,19 @@
+.Rotation
+{
+  @extend %scene-element, %flex-center;
+
+  $x: var( --r-x, 0 );
+  $y: var( --r-y, 0 );
+  $z: var( --r-z, 0 );
+  $t: calc( #{ var( --r-t, 0 ) } * 1deg );
+  $d: calc( var( --r-d, 0 ) * 1s );
+  $e: var( --r-e, linear );
+  $c: var( --r-c, infinite );
+
+  animation: animation-rotation $d $e $c;
+
+  @keyframes animation-rotation
+  {
+    to { @include rotation( $x, $y, $z, $t ) }
+  }
+}
