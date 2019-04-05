@@ -4,13 +4,9 @@ import { useColors, useSizes } from '../../hooks';
 
 Cube.propTypes = propTypes
 
-export default function Cube ({
-  colors: [ background, border, shadow ],
-  size,
-  ...props
-})
+export default function Cube ({ color, size, ...props })
 {
-  const colorsStyle = useColors({ colors: { background, border, shadow } })
+  const colorsStyle = useColors({ colors: { color } })
 
   const sizesStyle = useSizes({ sizes: { size } })
 
