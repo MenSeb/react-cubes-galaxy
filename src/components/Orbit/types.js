@@ -1,7 +1,7 @@
-import { arrayOf, number, string } from 'prop-types'
+import { number, string } from 'prop-types'
 
 export default {
-  colors: arrayOf( string ).isRequired,
+  color: string.isRequired,
   distance: number.isRequired,
   size: number.isRequired,
 }
