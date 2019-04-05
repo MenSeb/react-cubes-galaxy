@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "5b4b6fb1476ad48e9c6f",
-    "url": "/react-cubes-galaxy/static/css/main.acbc27dc.chunk.css"
+    "revision": "409ec9150356b000e5b9",
+    "url": "/react-cubes-galaxy/static/css/main.4054b2c3.chunk.css"
   },
   {
-    "revision": "5b4b6fb1476ad48e9c6f",
+    "revision": "409ec9150356b000e5b9",
     "url": "/react-cubes-galaxy/static/js/main.29107f09.chunk.js"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-cubes-galaxy/static/js/2.a5d73e58.chunk.js"
   },
   {
-    "revision": "df49e7beb9c18e1de5e375a19ed2bd46",
+    "revision": "f2fc6aa904669b9bebdf771c115cc04c",
     "url": "/react-cubes-galaxy/index.html"
   }
 ];

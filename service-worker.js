@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-cubes-galaxy/precache-manifest.743440b18cfbda2dd3f0c4ac744a65e2.js"
+  "/react-cubes-galaxy/precache-manifest.38751af4bb8328b15199e6e8a99c1d22.js"
 );
 
 workbox.clientsClaim();

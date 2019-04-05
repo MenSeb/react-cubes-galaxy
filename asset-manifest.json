@@ -1,5 +1,5 @@
 {
-  "main.css": "/react-cubes-galaxy/static/css/main.acbc27dc.chunk.css",
+  "main.css": "/react-cubes-galaxy/static/css/main.4054b2c3.chunk.css",
   "main.js": "/react-cubes-galaxy/static/js/main.29107f09.chunk.js",
   "main.js.map": "/react-cubes-galaxy/static/js/main.29107f09.chunk.js.map",
   "runtime~main.js": "/react-cubes-galaxy/static/js/runtime~main.23e8d1b7.js",
@@ -7,7 +7,7 @@
   "static/js/2.a5d73e58.chunk.js": "/react-cubes-galaxy/static/js/2.a5d73e58.chunk.js",
   "static/js/2.a5d73e58.chunk.js.map": "/react-cubes-galaxy/static/js/2.a5d73e58.chunk.js.map",
   "index.html": "/react-cubes-galaxy/index.html",
-  "precache-manifest.743440b18cfbda2dd3f0c4ac744a65e2.js": "/react-cubes-galaxy/precache-manifest.743440b18cfbda2dd3f0c4ac744a65e2.js",
+  "precache-manifest.38751af4bb8328b15199e6e8a99c1d22.js": "/react-cubes-galaxy/precache-manifest.38751af4bb8328b15199e6e8a99c1d22.js",
   "service-worker.js": "/react-cubes-galaxy/service-worker.js",
-  "static/css/main.acbc27dc.chunk.css.map": "/react-cubes-galaxy/static/css/main.acbc27dc.chunk.css.map"
+  "static/css/main.4054b2c3.chunk.css.map": "/react-cubes-galaxy/static/css/main.4054b2c3.chunk.css.map"
 }
