@@ -6,11 +6,9 @@ import { useVariablesCSS } from '../../hooks';
 Star.propTypes = propTypes
 
 export default function Star ({
-  color,
   distance,
-  rotation,
-  size,
-  time,
+  star: { time, rotation, ...star },
+  ...props
 })
 {
   const starStyle = useVariablesCSS({
@@ -19,9 +17,9 @@ export default function Star ({
   })
 
   return (
-    <div className='Star' style={ starStyle }>
+    <div { ...props } className='Star' style={ starStyle }>
       <Rotation { ...rotation } d={ time }>
-        <Cube color={ color } size={ size } aria-hidden={ true } />
+        <Cube { ...star } aria-hidden={ true } />
       </Rotation>
     </div>
   )
