@@ -1,18 +1,20 @@
 import React from 'react'
 import propTypes from './types'
-import { useVariablesCSS } from '../../hooks';
+import { useColors, useVariablesCSS } from '../../hooks';
 
 Orbit.propTypes = propTypes
 
-export default function Orbit ({ colors, distance, size, ...props })
+export default function Orbit ({
+  colors: [ before, border, after ],
+  distance,
+  size,
+  ...props
+})
 {
-  const [ colorBefore, color, colorAfter ] = colors
+  const colorsStyle = useColors({ colors: { before, border, after } })
 
   const orbitStyle = useVariablesCSS({
     vars: {
-      color: `#${ color }`,
-      color_before: `#${ colorBefore }`,
-      color_after: `#${ colorAfter }`,
       distance: `${ distance }px`,
       size: `${ size }px`
     },
@@ -20,6 +22,10 @@ export default function Orbit ({ colors, distance, size, ...props })
   })
 
   return (
-    <div { ...props } className='Orbit' style={ orbitStyle } />
+    <div
+      { ...props }
+      className='Orbit'
+      style={{ ...orbitStyle, ...colorsStyle }}
+    />
   )
 }

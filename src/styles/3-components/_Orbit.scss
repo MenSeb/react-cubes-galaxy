@@ -9,9 +9,9 @@
   $orbitSizeBefore: calc( #{ $orbitSize } - #{ $twice } );
   $orbitSizeAfter: calc( #{ $orbitSize } + #{ $twice } );
 
-  $orbitColor: var( --orbit-color );
-  $orbitColorBefore: var( --orbit-color_before );
-  $orbitColorAfter: var( --orbit-color_after );
+  $orbitColor: var( --color-border );
+  $orbitColorBefore: var( --color-before );
+  $orbitColorAfter: var( --color-after );
 
   @extend %pseudo-elements;
 
