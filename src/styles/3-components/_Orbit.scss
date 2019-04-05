@@ -1,9 +1,9 @@
 .Orbit
 {
-  $size: var( --orbit-size );
+  $distance: var( --size-distance );
+  $size: var( --size-size );
   $half: calc( #{ $size } / 2 );
   $twice: calc( #{ $size } * 2 );
-  $distance: var( --orbit-distance );
 
   $orbitSize: calc( #{ $distance } * 2 + #{ $half } );
   $orbitSizeBefore: calc( #{ $orbitSize } - #{ $twice } );
