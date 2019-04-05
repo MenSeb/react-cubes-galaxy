@@ -1,6 +1,6 @@
 .Star
 {
-  $distance: var( --star-distance );
+  $distance: var( --size-distance );
 
   @extend %scene-element, %flex-center;
 

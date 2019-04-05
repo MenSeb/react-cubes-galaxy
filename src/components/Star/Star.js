@@ -1,7 +1,7 @@
 import React from 'react'
 import propTypes from './types'
 import { Cube, Rotation } from '..';
-import { useVariablesCSS } from '../../hooks';
+import { useSizes } from '../../hooks';
 
 Star.propTypes = propTypes
 
@@ -11,13 +11,10 @@ export default function Star ({
   ...props
 })
 {
-  const starStyle = useVariablesCSS({
-    vars: { distance: `${ distance }px` },
-    preVar: 'star'
-  })
+  const sizesStyle = useSizes({ sizes: { distance } })
 
   return (
-    <div { ...props } className='Star' style={ starStyle }>
+    <div { ...props } className='Star' style={ sizesStyle }>
       <Rotation { ...rotation } d={ time }>
         <Cube { ...star } aria-hidden={ true } />
       </Rotation>
