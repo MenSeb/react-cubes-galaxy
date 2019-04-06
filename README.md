@@ -10,6 +10,8 @@ This project was build with React & SASS.
 
 The application is made only of functionnal components and hooks.
 
+The idea came from a Pen I did with CSS only [Cubes Galaxy Pen](https://codepen.io/MenSeb/full/LaKRoZ)
+
 ## Github Pages Demo
 
 [Cubes Galaxy demo](https://menseb.github.io/react-cubes-galaxy/)
