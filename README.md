@@ -56,6 +56,8 @@ Any element provided to a galaxy system needs at least a distance and a star
 - [ ] Configure the orbit size as a global prop or specific to each orbits
 - [ ] Configure the rotation time as a global prop or specific to each planets
 - [ ] Configure distance between each planets to avoid collisions/overlaps
+- [ ] Configure orbit size with planet distance
+- [ ] Configure star with **( x, y, z )** position instead of distance
 
 ## Scripts
 
