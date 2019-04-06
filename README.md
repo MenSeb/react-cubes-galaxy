@@ -12,7 +12,44 @@ The main purpose of this project is to create a 3D galaxy made of cube planets.
 
 ## Features
 
-- Auto generating galaxy by providing an array of object stars/planets
+- Auto generating galaxy by providing an array of object
+
+## Galaxy system element
+
+Any element provided to a galaxy system needs at least a distance and a star
+
+### Star element
+
+```javascript
+{
+  distance,
+  star: {
+    size,
+    time,
+    color,
+    rotation,
+  }
+}
+```
+
+### Planet element
+
+```javascript
+{
+  distance,
+  star: {
+    size,
+    time,
+    color,
+    rotation,
+  },
+  orbit: {
+    size,
+    color,
+    distance,
+  }
+}
+```
 
 ## Todos
 
