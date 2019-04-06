@@ -16,7 +16,7 @@ The main purpose of this project is to create a 3D galaxy made of cube planets.
 
 ## Todos
 
-- [] test todo
+- [ ] test todo
 - [x] test todo completed
 
 ## Scripts
