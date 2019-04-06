@@ -1,8 +1,8 @@
 [logo]: https://github.com/MenSeb/react-cubes-galaxy/blob/master/public/logo.svg "Cubes Galaxy logo"
 
-[![alt text][logo]]((https://menseb.github.io/react-cubes-galaxy/))
+[![alt text][logo]](https://menseb.github.io/react-cubes-galaxy/)
 
-# [Cubes Galaxy]
+# Cubes Galaxy
 
 ## Features
 
