@@ -16,9 +16,9 @@ The main purpose of this project is to create a 3D galaxy made of cube planets.
 
 ## Todos
 
-- [] Configure the orbit size as a global prop or specific to each orbits
-- [] Configure the rotation time as a global prop or specific to each planets
-- [] Configure distance between each planets to avoid collisions/overlaps
+- [ ] Configure the orbit size as a global prop or specific to each orbits
+- [ ] Configure the rotation time as a global prop or specific to each planets
+- [ ] Configure distance between each planets to avoid collisions/overlaps
 
 ## Scripts
 
