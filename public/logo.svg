@@ -25,7 +25,7 @@
     </g>
 
     <!-- Star -->
-    <use href='#square-large' x='-2.5' y='-2.5' fill='#f8b739' />
+    <use href='#square-large' x='-2.5' y='-2.5' fill='#f8b739' transform='rotate( 45, 0, 0 )' />
 
     <!-- Planets -->
     <use href='#square-medium' x='-17.5' y='3' fill='#ff3796' transform='rotate( -22.5, -15.5, 5 )' />
