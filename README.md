@@ -12,12 +12,13 @@ The main purpose of this project is to create a 3D galaxy made of cube planets.
 
 ## Features
 
-
+- Auto generating galaxy by providing an array of object stars/planets
 
 ## Todos
 
-- [ ] test todo
-- [x] test todo completed
+- [] Configure the orbit size as a global prop or specific to each orbits
+- [] Configure the rotation time as a global prop or specific to each planets
+- [] Configure distance between each planets to avoid collisions/overlaps
 
 ## Scripts
 
