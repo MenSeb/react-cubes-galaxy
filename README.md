@@ -1,10 +1,12 @@
 [logo]: https://github.com/MenSeb/react-cubes-galaxy/blob/master/public/logo.svg "Cubes Galaxy logo"
 
-# ![alt text][logo] Cubes Galaxy
+![alt text][logo]
 
-## Demo page
+# [Cubes Galaxy](https://menseb.github.io/react-cubes-galaxy/)
 
-[Demo](https://menseb.github.io/react-cubes-galaxy/)
+## Features
+
+## Todos
 
 ## Scripts
 
