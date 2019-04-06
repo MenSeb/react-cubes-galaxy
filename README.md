@@ -4,6 +4,8 @@
 
 # Cubes Galaxy
 
+The main purpose of this project is to create a 3D galaxy made of cube planets.
+
 ## Github Pages Demo
 
 [Cubes Galaxy demo](https://menseb.github.io/react-cubes-galaxy/)
