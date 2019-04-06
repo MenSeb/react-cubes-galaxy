@@ -6,7 +6,7 @@
 
 ## Github Pages Demo
 
-<a href='https://menseb.github.io/react-cubes-galaxy/' target='_blank'>Cubes Galaxy demo</a>
+[Cubes Galaxy demo](https://menseb.github.io/react-cubes-galaxy/)
 
 ## Features
 
