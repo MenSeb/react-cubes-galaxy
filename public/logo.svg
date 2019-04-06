@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version='1.1' width='100' height='100' viewBox='-20 -20 40 40' xmlns='http://www.w3.org/2000/svg'>
 
-  <defs>
-    <path id='square-large' d='M0 0 h5 v5 h-5 z' />
-    <path id='square-medium' d='M0 0 h4 v4 h-4 z' />
-    <path id='square-small' d='M0 0 h3 v3 h-3 z' />
-    <path id='spiral-large' d='
-      M-17 0 a 17 17 0 0 1 34 0 a 17 17 0 0 1 -34 0
-      M-16 0 a 16 16 0 0 0 32 0 a 16 16 0 0 0 -32 0'/>
-    <path id='spiral-medium' d='
-      M-12 0 a 12 12 0 0 1 24 0 a 12 12 0 0 1 -24 0
-      M-11 0 a 11 11 0 0 0 22 0 a 11 11 0 0 0 -22 0'/>
-    <path id='spiral-small' d='
-      M-7 0 a 7 7 0 0 1 14 0 a 7 7 0 0 1 -14 0
-      M-6 0 a 6 6 0 0 0 12 0 a 6 6 0 0 0 -12 0'/>
-  </defs>
-
   <g id='logo'>
+    <!-- Background -->
+    <path d='M-20 0 a 20 20 0 0 1 40 0 a 20 20 0 0 1 -40 0' fill='#444444' />
+
     <!-- Spirals -->
-    <g id='spirals' fill='#444444'>
-      <use href='#spiral-large' />
-      <use href='#spiral-medium' />
-      <use href='#spiral-small' />
+    <g id='spirals' fill='#eaeaea'>
+      <path id='spiral-large' d='
+        M-17 0 a 17 17 0 0 1 34 0 a 17 17 0 0 1 -34 0
+        M-16 0 a 16 16 0 0 0 32 0 a 16 16 0 0 0 -32 0'/>
+      <path id='spiral-medium' d='
+        M-12 0 a 12 12 0 0 1 24 0 a 12 12 0 0 1 -24 0
+        M-11 0 a 11 11 0 0 0 22 0 a 11 11 0 0 0 -22 0'/>
+      <path id='spiral-small' d='
+        M-7 0 a 7 7 0 0 1 14 0 a 7 7 0 0 1 -14 0
+        M-6 0 a 6 6 0 0 0 12 0 a 6 6 0 0 0 -12 0'/>
     </g>
 
+    <!-- square-large M0 0 h5 v5 h-5 z -->
+    <!-- square-medium M0 0 h4 v4 h-4 z -->
+    <!-- square-small M0 0 h3 v3 h-3 z -->
+
     <!-- Star -->
-    <use href='#square-large' x='-2.5' y='-2.5' fill='#f8b739' transform='rotate( 45, 0, 0 )' />
+    <path d='M-2.5 -2.5 h5 v5 h-5 z' fill='#f8b739' transform='rotate( 45, 0, 0 )' />
 
     <!-- Planets -->
-    <use href='#square-medium' x='-17.5' y='3' fill='#ff3796' transform='rotate( -22.5, -15.5, 5 )' />
-    <use href='#square-medium' x='12' y='-10' fill='#0b8457' transform='rotate( -22.5, 14, -8 )' />
-    <use href='#square-medium' x='7.5' y='4' fill='#00d1cd' transform='rotate( 22.5, 9.5, 6 )' />
+    <path d='M-17.5 3 h4 v4 h-4 z' fill='#ff3796' transform='rotate( -22.5, -15.5, 5 )' />
+    <path d='M12 -10 h4 v4 h-4 z' fill='#0b8457' transform='rotate( -22.5, 14, -8 )' />
+    <path d='M7.5 4 h4 v4 h-4 z' fill='#00d1cd' transform='rotate( 22.5, 9.5, 6 )' />
 
-    <use href='#square-small' x='-8' y='-11' fill='#df4d19' transform='rotate( 45, -6.5, -9.5 )' />
-    <use href='#square-small' x='-6' y='3' fill='#866ec7' transform='rotate( 45, -4.5, 4.5 )' />
-    <use href='#square-small' x='4' y='14' fill='#f12d2d' transform='rotate( -22.5, 5.5, 15.5 )' />
+    <path d='M-8 -11 h4 v4 h-4 z' fill='#df4d19' transform='rotate( 45, -6.5, -9.5 )' />
+    <path d='M-6 3 h4 v4 h-4 z' fill='#866ec7' transform='rotate( 45, -4.5, 4.5 )' />
+    <path d='M4 14 h4 v4 h-4 z' fill='#f12d2d' transform='rotate( -22.5, 5.5, 15.5 )' />
   </g>
 
 </svg>
