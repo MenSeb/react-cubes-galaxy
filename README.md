@@ -58,6 +58,8 @@ Any element provided to a galaxy system needs at least a distance and a star
 - [ ] Configure distance between each planets to avoid collisions/overlaps
 - [ ] Configure orbit size with planet distance
 - [ ] Configure star with **( x, y, z )** position instead of distance
+- [ ] Configure a form interface for creating, deleting and updating planets from a galaxy
+- [ ] Configure a Galaxy Context system with hooks
 
 ## Scripts
 
