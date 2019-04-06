@@ -5,7 +5,9 @@
 # Cubes Galaxy
 
 The main purpose of this project is to create a 3D galaxy made of cube planets.
+
 This project was build with React & SASS.
+
 The application is made only of functionnal components and hooks.
 
 ## Github Pages Demo
