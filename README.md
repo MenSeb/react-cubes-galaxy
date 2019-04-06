@@ -2,14 +2,14 @@
 
 # ![alt text][logo] Cubes Galaxy
 
-# Demo page
+## Demo page
 
 [Demo](https://menseb.github.io/react-cubes-galaxy/)
 
-# Scripts
+## Scripts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Licensing
+## Licensing
 
 The code in this project is licensed under MIT license.
